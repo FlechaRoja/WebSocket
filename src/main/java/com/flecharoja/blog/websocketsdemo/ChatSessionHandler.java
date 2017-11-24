@@ -39,9 +39,9 @@ public class ChatSessionHandler {
      * @param id
      */
     void addMessage(String message, String id) {
-        for (Session session : sesiones) {
+        sesiones.forEach((session) -> {
             sendToSession(session, message);
-        }
+        });
     }
 
     private void sendToSession(Session session, String message) {
