@@ -18,7 +18,6 @@ function initializeReception()
     }
 }
 
-// called when a message is received
 wSocket.onmessage = onMessage;    
 
  function onMessage(evt) { 
@@ -29,7 +28,6 @@ wSocket.onmessage = onMessage;
 // called when socket closes
 wSocket.onclose = function ()
 {
-    // websocket is closed.
     //alert("Connection is closed...");
 };
 
